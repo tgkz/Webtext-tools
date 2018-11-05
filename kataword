@@ -1,0 +1,13 @@
+#!/bin/sh
+# kataword: print out katakana word 
+# Usage: kataward filename or <stdin
+#  if you specify filename, all files will be used
+#    if not read from stdin
+if [ $# -gt 0 ]; then
+  for i in $*
+  do 
+     grep [ァ-ンー]*[ア-ンー] -o $i |sort|uniq
+  done
+else
+     grep [ァ-ンー]*[ア-ンー] -o   |sort|uniq
+fi

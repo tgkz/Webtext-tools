@@ -1,0 +1,4 @@
+#!/bin/sh
+# show katakana word in specified URL
+# file URL contain URL 
+url2txt `cat URL` | kataword 

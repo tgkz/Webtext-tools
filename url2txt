@@ -1,0 +1,5 @@
+#!/bin/sh
+# url2txt : print text from specified URL
+# Usage: url2txt URL 
+# curl: -k  no check ssh, -s : silent
+curl -ks $1 | html2text  -utf8
