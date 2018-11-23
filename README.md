@@ -1,5 +1,6 @@
 # webtext-tools
-Tools for manupulate texts in the Web
+Tools for manupulate texts in the Web.
+
 It includes:
 
 ## klist
@@ -7,7 +8,7 @@ Show katakana words in the sepcified URL
 
 Usage: `klist https://goo.bar`
 
-## kanaword
+## kataword
 print katakana words in the spefied file or stdin
 
 Usage: `kataword filename`
