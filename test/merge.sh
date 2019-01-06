@@ -1,5 +1,9 @@
 #!/bin/sh
 PATH=$PATH:`pwd`/../:   # add command dir to $PATH
+if [ -f kanamerge.txt ]; then
+   cp kanamerge.txt kanamerge-old.txt
+fi
+
 for i in *
 do
   if [ -d $i ]; then
